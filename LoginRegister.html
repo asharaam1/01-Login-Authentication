@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="another.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="login-btn" onclick="showLogin()">Login</button>
+                <button id="register-btn" onclick="showRegister()">Register</button>
+            </div>
+
+
+
+            <form id="login-form" class="form active">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <div class="error">
+                    <p class="err-msg">
+
+                    </p>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>New user? <a href="#" onclick="showRegister()">Register here</a></p>
+            </form>
+
+
+
+            <form id="register-form" class="form">
+                <h2>Register</h2>
+                <div class="input-group">
+                    <label for="register-name">Name</label>
+                    <input type="text" id="register-name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p>Already a user? <a href="#" onclick="showLogin()">Login here</a></p>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="another.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-toggle button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form.active {
+    display: block;
+    opacity: 1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 5px #6a11cb;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #dd2476, #ff512f);
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #ff9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
