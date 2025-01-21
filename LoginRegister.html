@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Register</title>
-    <link rel="stylesheet" href="another.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             </div>
 
 
-
+    <!-- !--------------- Login Form --------------! -->
             <form id="login-form" class="form active">
                 <h2>Login</h2>
                 <div class="input-group">
@@ -29,7 +30,7 @@
                     <input type="password" id="login-password" placeholder="Enter your password" required>
                 </div>
                 <div class="error">
-                    <p class="err-msg">
+                    <p class="log-msg">
 
                     </p>
                 </div>
@@ -38,7 +39,7 @@
             </form>
 
 
-
+    <!-- !--------------- Register Form --------------! -->
             <form id="register-form" class="form">
                 <h2>Register</h2>
                 <div class="input-group">
@@ -52,8 +53,15 @@
                 <div class="input-group">
                     <label for="register-password">Password</label>
                     <input type="password" id="register-password" placeholder="Create a password" required>
+                    <div class="msg">
+                        <p class="reg-msg">
+
+                        </p>
+                    </div>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn">Register</button> <br> <br>
+                <button type="submit" class="btn" id="googleBtn">Rigister with <i class="fa-brands fa-google"
+                        style="color: #74C0FC;"></i></button>
                 <p>Already a user? <a href="#" onclick="showLogin()">Login here</a></p>
             </form>
 
@@ -61,7 +69,9 @@
         </div>
     </div>
 
-    <script src="another.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="LoginRegister.js"></script>
+
 </body>
 
 </html>
